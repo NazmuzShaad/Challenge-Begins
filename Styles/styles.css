@@ -253,9 +253,82 @@ background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
 /* Support Section Styles */
 .cta-section{
     padding: 64px 48px;
-    background-image: url(../assets/handshake.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+    
+    url(../assets/handshake.jpg) 
+    ;
+    background-position: center;
+    background-size: cover;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px auto;
+    align-items: center;
+    border-radius: 16px;
+
 }
 
+.cta-title{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.cta-text{
+    max-width: 606px;
+    text-align: center;
+    color: white;
+    margin: 16px 0px 24px 0px;
+}
+
+.feedback-input{
+    padding: 20px;
+    border-radius: 8px;
+    /* max-width: 548px; */
+    width: 548px;
+    border: none;
+}
+.submit-form{
+    display: flex;
+    gap: 8px;
+}
+
+.submit-button{
+    padding: 17px 20px;
+    border-radius: 8px;
+    background-color: #FFF;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+input::placeholder{
+    color: rgba(13, 19, 33, 0.40);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* Footer Styles */
+footer{
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.03);
+    padding: 32px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+.footer-social-container{
+    display: flex;
+    gap: 24px;
+}
 
 /* Responsive Styles */
 
@@ -270,7 +343,7 @@ margin: 50px 20px;
 padding: 15px;
  }  
 
-.why-card ,.why-card-2 , .current-card-container{
+.why-card ,.why-card-2 , .current-card-container {
     flex-direction:column;
     text-align: center;
     padding: 20px;
@@ -305,7 +378,38 @@ nav , .banner{
 .hero-title{
     font-size: 2rem;
 }
+ 
+.submit-form{
+    width: 90%;
+}
 
+.feedback-input{
+    width: 100%;
+}
+
+.cta-section{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cta-title{
+    text-align: center;
+}
+
+.submit-form{
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    padding: 30px 50px;
+}
+
+footer{
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
 
 
 }
@@ -327,4 +431,20 @@ padding: 15px;
 .why-card ,.why-card-2{
     padding: 20px;
 }
+
+.submit-form{
+    width: 90%;
+}
+
+.cta-section{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer{
+    padding: 30px 50px;
+}
+
+
+
 }
